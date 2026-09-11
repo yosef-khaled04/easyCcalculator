@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">الحاسبة البسيطة</string>
+    <string name="number_1">الرقم الأول</string>
+    <string name="number_2">الرقم الثاني</string>
+    <string name="zero">0.0</string>
+    <string name="sum">Sum</string>
+    <string name="sub">_</string>
+    <string name="div">\\</string>
+    <string name="mul">*</string>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name" translatable="false">Easy Calculator</string>
+    <string name="number_1" translatable="false">Number 1</string>
+    <string name="number_2" translatable="false">Number 2</string>
+    <string name="zero">0.0</string>
+    <string name="sum">+</string>
+    <string name="sub">_</string>
+    <string name="div">\\</string>
+    <string name="mul">*</string>
+</resources>
