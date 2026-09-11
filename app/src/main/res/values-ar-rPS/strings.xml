@@ -4,8 +4,21 @@
     <string name="number_1">الرقم الأول</string>
     <string name="number_2">الرقم الثاني</string>
     <string name="zero">0.0</string>
-    <string name="sum">Sum</string>
+    <string name="sum">+</string>
     <string name="sub">_</string>
-    <string name="div">\\</string>
+    <string name="div">\</string>
     <string name="mul">*</string>
+    <string name="width">العرض</string>
+    <string name="height">الطول</string>
+    <string name="radius">نصف القطر</string>
+    <string name="calculate">احسب</string>
+    <string name="base">القاعدة</string>
+    <string name="calculating_the_area_of_geometric_shapes">حساب مساحة الأشكال الهندسية</string>
+
+    <string-array name="shapes">
+        <item>اختر شكل...؟</item>
+        <item>1_مستطيل.</item>
+        <item>2_دائرة.</item>
+        <item>3_مثلث.</item>
+    </string-array>
 </resources>

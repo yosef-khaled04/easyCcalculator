@@ -18,7 +18,7 @@
         android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:background="@drawable/easy_calculator_bacground_edittext"
+        android:background="@drawable/easy_calculator_background_edittext"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -33,9 +33,9 @@
         android:hint="@string/number_1"
         android:autofillHints="none"
         android:inputType="number"
-        android:background="@drawable/easy_calculator_bacground_edittext"
+        android:background="@drawable/easy_calculator_background_edittext"
         android:textColor="#FFFFFF"
-        android:textColorHint="#99FFFFFF"
+        android:textColorHint="@color/text_color_hint"
         app:layout_constraintTop_toBottomOf="@id/easyCalculator_tv_result"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -50,9 +50,9 @@
         android:hint="@string/number_2"
         android:autofillHints="none"
         android:inputType="number"
-        android:background="@drawable/easy_calculator_bacground_edittext"
+        android:background="@drawable/easy_calculator_background_edittext"
         android:textColor="#FFFFFF"
-        android:textColorHint="#99FFFFFF"
+        android:textColorHint="@color/text_color_hint"
         app:layout_constraintTop_toBottomOf="@id/easyCalculator_ed_num1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -83,7 +83,7 @@
             android:textStyle="bold"
             android:textColor="@color/white"
             android:elevation="12dp"
-            android:background="@drawable/easy_calculator_bacground_edittext" />
+            android:background="@drawable/easy_calculator_background_edittext" />
 
         <Button
             android:id="@+id/easyCalculator_btn_subtraction"
@@ -99,7 +99,7 @@
             android:textStyle="bold"
             android:textColor="@color/black"
             android:elevation="12dp"
-            android:background="@drawable/easy_calculator_bacground_btn_sum" />
+            android:background="@drawable/easy_calculator_background_btn_sum" />
 
         <Button
             android:id="@+id/easyCalculator_btn_multiplication"
@@ -115,7 +115,7 @@
             android:textStyle="bold"
             android:textColor="@color/white"
             android:elevation="12dp"
-            android:background="@drawable/easy_calculator_bacground_edittext" />
+            android:background="@drawable/easy_calculator_background_edittext" />
 
         <Button
             android:id="@+id/easyCalculator_btn_division"
@@ -131,7 +131,7 @@
             android:textStyle="bold"
             android:textColor="@color/black"
             android:elevation="12dp"
-            android:background="@drawable/easy_calculator_bacground_btn_sum" />
+            android:background="@drawable/easy_calculator_background_btn_sum" />
 
     </LinearLayout>
 

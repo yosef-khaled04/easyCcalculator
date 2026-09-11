@@ -7,4 +7,17 @@
     <string name="sub">_</string>
     <string name="div">\\</string>
     <string name="mul">*</string>
+    <string name="width">width</string>
+    <string name="height">height</string>
+    <string name="radius" translatable="false">radius</string>
+    <string name="calculate" translatable="false">Calculate</string>
+    <string name="base" translatable="false">base</string>
+    <string name="calculating_the_area_of_geometric_shapes">Calculating the area of geometric shapes</string>
+
+    <string-array name="shapes">
+        <item>select shape...?</item>
+        <item>1_Rectangle.</item>
+        <item>2_Circle.</item>
+        <item>3_Triangle.</item>
+    </string-array>
 </resources>

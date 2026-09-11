@@ -2,4 +2,10 @@
 <resources>
 
     <style name="Theme.EasyCalculator" parent="Theme.AppCompat.Light.NoActionBar" />
+    <style name="SpinnerCustomTheme" parent="ThemeOverlay.AppCompat">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/white</item>
+        <item name="android:popupBackground">@color/black</item>
+    </style>
+
 </resources>
