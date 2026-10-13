@@ -1,5 +1,6 @@
 package com.example.easycalculator.Activitys;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn_sub ;
     Button btn_mul ;
     Button btn_div ;
+    Button btn_intent ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         btn_sub = findViewById(R.id.easyCalculator_btn_subtraction);
         btn_mul = findViewById(R.id.easyCalculator_btn_multiplication);
         btn_div = findViewById(R.id.easyCalculator_btn_division);
+        btn_intent = findViewById(R.id.btn_intent);
 
         btn_sum.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -117,6 +120,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btn_intent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Areas.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

@@ -29,6 +29,7 @@ public class Areas extends AppCompatActivity {
     EditText ed_triangle_height ;
     TextView tv_result;
     View linier1, linier2;
+    ImageButton btn_back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +52,9 @@ public class Areas extends AppCompatActivity {
         sp_selectShapes = findViewById(R.id.spinar_shapes);
         linier1 = findViewById(R.id.linier1);
         linier2 = findViewById(R.id.linier2);
+        btn_back = findViewById(R.id.btn_back);
+
+        btn_back.setOnClickListener(v -> finish());
 
         // Hide all inputs initially
         linier1.setVisibility(View.GONE);
@@ -99,51 +103,48 @@ public class Areas extends AppCompatActivity {
             }
         });
 
-        btn_calculate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int shape = sp_selectShapes.getSelectedItemPosition();
-                double area = 0;
-                boolean valid = false;
+        btn_calculate.setOnClickListener(view -> {
+            int shape = sp_selectShapes.getSelectedItemPosition();
+            double area = 0;
+            boolean valid = false;
 
-                try {
-                    switch (shape) {
-                        case 1: // Rectangle
-                            String w = ed_rectangle_width.getText().toString();
-                            String h = ed_rectangle_height.getText().toString();
-                            if (!w.isEmpty() && !h.isEmpty()) {
-                                area = Double.parseDouble(w) * Double.parseDouble(h);
-                                valid = true;
-                            }
-                            break;
-                        case 2: // Circle
-                            String r = ed_circle_radius.getText().toString();
-                            if (!r.isEmpty()) {
-                                area = Math.PI * Math.pow(Double.parseDouble(r), 2);
-                                valid = true;
-                            }
-                            break;
-                        case 3: // Triangle
-                            String b = ed_triangle_base.getText().toString();
-                            String th = ed_triangle_height.getText().toString();
-                            if (!b.isEmpty() && !th.isEmpty()) {
-                                area = 0.5 * Double.parseDouble(b) * Double.parseDouble(th);
-                                valid = true;
-                            }
-                            break;
-                        default:
-                            Toast.makeText(Areas.this, "Please select a shape", Toast.LENGTH_SHORT).show();
-                            return;
-                    }
-
-                    if (valid) {
-                        tv_result.setText(String.format("%.2f", area));
-                    } else {
-                        Toast.makeText(Areas.this, "Please enter all values", Toast.LENGTH_SHORT).show();
-                    }
-                } catch (NumberFormatException e) {
-                    Toast.makeText(Areas.this, "Invalid input", Toast.LENGTH_SHORT).show();
+            try {
+                switch (shape) {
+                    case 1: // Rectangle
+                        String w = ed_rectangle_width.getText().toString();
+                        String h = ed_rectangle_height.getText().toString();
+                        if (!w.isEmpty() && !h.isEmpty()) {
+                            area = Double.parseDouble(w) * Double.parseDouble(h);
+                            valid = true;
+                        }
+                        break;
+                    case 2: // Circle
+                        String r = ed_circle_radius.getText().toString();
+                        if (!r.isEmpty()) {
+                            area = Math.PI * Math.pow(Double.parseDouble(r), 2);
+                            valid = true;
+                        }
+                        break;
+                    case 3: // Triangle
+                        String b = ed_triangle_base.getText().toString();
+                        String th = ed_triangle_height.getText().toString();
+                        if (!b.isEmpty() && !th.isEmpty()) {
+                            area = 0.5 * Double.parseDouble(b) * Double.parseDouble(th);
+                            valid = true;
+                        }
+                        break;
+                    default:
+                        Toast.makeText(Areas.this, "Please select a shape", Toast.LENGTH_SHORT).show();
+                        return;
                 }
+
+                if (valid) {
+                    tv_result.setText(String.format("%.2f", area));
+                } else {
+                    Toast.makeText(Areas.this, "Please enter all values", Toast.LENGTH_SHORT).show();
+                }
+            } catch (NumberFormatException e) {
+                Toast.makeText(Areas.this, "Invalid input", Toast.LENGTH_SHORT).show();
             }
         });
 

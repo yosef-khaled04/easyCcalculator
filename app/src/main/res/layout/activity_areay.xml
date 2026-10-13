@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/easy_calculator_background_edittext"
         android:elevation="12dp"
         android:popupBackground="@drawable/spinner_dropdown_background"
